@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 1040" width="1760" height="1040" role="img" aria-label="BaliExpress 본사(HQ) 전체 토폴로지" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR','Segoe UI',sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6b7280"/></marker></defs>
+<rect width="1760" height="1040" fill="#ffffff"/>
+<text x="24" y="34" font-size="20" font-weight="800" fill="#1f2937">BaliExpress 본사(HQ) 전체 토폴로지</text>
+<rect x="20" y="56" width="270" height="960" rx="14" fill="#eef2ff" stroke="#8b9bd8" stroke-width="1.5" />
+<text x="34" y="80" font-size="15" font-weight="700" fill="#1f2937" opacity="0.9">외부 · 지점</text>
+<rect x="310" y="56" width="250" height="960" rx="14" fill="#fff4e5" stroke="#e0a458" stroke-width="1.5" />
+<text x="324" y="80" font-size="15" font-weight="700" fill="#1f2937" opacity="0.9">경계</text>
+<rect x="580" y="56" width="330" height="960" rx="14" fill="#ffeceb" stroke="#e08a85" stroke-width="1.5" />
+<text x="594" y="80" font-size="15" font-weight="700" fill="#a8423c" opacity="0.9">보안 코어 (방화벽 · IPS)</text>
+<rect x="930" y="56" width="810" height="420" rx="14" fill="#eaf7ee" stroke="#79b98b" stroke-width="1.5" />
+<text x="944" y="80" font-size="15" font-weight="700" fill="#1f2937" opacity="0.9">직원망 + 웹 보호 구간</text>
+<rect x="930" y="496" width="810" height="270" rx="14" fill="#fff9e0" stroke="#d9b84a" stroke-width="1.5" />
+<text x="944" y="520" font-size="15" font-weight="700" fill="#1f2937" opacity="0.9">서버망 · 로그망</text>
+<rect x="930" y="786" width="810" height="230" rx="14" fill="#f1ecfa" stroke="#a28ad6" stroke-width="1.5" />
+<text x="944" y="810" font-size="15" font-weight="700" fill="#1f2937" opacity="0.9">관리망 (OOB) 10.14.200.0/24</text>
+<rect x="40" y="96" width="230" height="52" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="155" y="118" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">인터넷</text><text x="155" y="135" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">실제 인터넷(GNS3 클라우드)</text>
+<rect x="40" y="190" width="230" height="62" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="155" y="217" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">ISP 라우터</text><text x="155" y="234" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">192.0.2.1/29 · NAT 구간</text>
+<rect x="40" y="420" width="230" height="62" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="155" y="447" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">WAN 라우터</text><text x="155" y="464" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">지점 3곳을 잇는 가운데 망</text>
+<rect x="40" y="540" width="230" height="70" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="155" y="562.5" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">서비스 DC</text><text x="155" y="579.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">10.10.0.0/16</text><text x="155" y="596.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">쇼핑몰 · 연동 API</text>
+<rect x="40" y="640" width="230" height="70" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="155" y="662.5" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">물류 DC</text><text x="155" y="679.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">10.20.0.0/16</text><text x="155" y="696.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">재고 시스템(WMS)</text>
+<rect x="40" y="740" width="230" height="62" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" stroke-dasharray="6 4"/><text x="155" y="767" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">물류센터</text><text x="155" y="784" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">10.40.0.0/16 (연결 구성 준비)</text>
+<rect x="330" y="420" width="210" height="70" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="435" y="442.5" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">WAN-EDGE</text><text x="435" y="459.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">203.0.113.26/29</text><text x="435" y="476.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">NAT · IKE/ESP 정적 NAT</text>
+<rect x="330" y="530" width="210" height="52" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="435" y="552" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">TAP 허브</text><text x="435" y="569" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">트래픽 복사</text>
+<rect x="330" y="620" width="210" height="62" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="435" y="647" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">IDS (Suricata)</text><text x="435" y="664" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">패시브 탐지 · 10.14.200.14</text>
+<rect x="610" y="150" width="270" height="196" rx="9" fill="#fff" stroke="#c0463f" stroke-width="2.4" /><text x="745" y="201.5" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">pfSense 방화벽 · VPN</text><text x="745" y="218.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">em0 WAN 10.14.0.2/30</text><text x="745" y="235.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">em1 Transit 10.14.0.33/29</text><text x="745" y="252.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">em2 ISP 192.0.2.2/29 (NAT)</text><text x="745" y="269.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">em3 서버 10.14.90.1 · 로그 10.14.210.1</text><text x="745" y="286.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">em4 관리 10.14.200.1</text><text x="745" y="303.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">IPsec IKEv2 · 기본 차단 규칙</text>
+<rect x="610" y="470" width="270" height="130" rx="9" fill="#ffffff" stroke="#c0463f" stroke-width="2" /><text x="745" y="514" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">IPS (Suricata 인라인)</text><text x="745" y="531" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">쌍 A: pfSense e1 ↔ Transit_SW</text><text x="745" y="548" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">쌍 B: pfSense e3 ↔ LOG_SW</text><text x="745" y="565" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">사용자 정의 규칙 · EVE 로그</text>
+<rect x="950" y="100" width="150" height="46" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1025" y="119" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">Transit_SW</text><text x="1025" y="136" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">10.14.0.32/29</text>
+<rect x="1150" y="96" width="260" height="52" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1280" y="118" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">WAF (nginx + ModSecurity)</text><text x="1280" y="135" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">10.14.0.36 · TLS 종단 · 공격 403</text>
+<rect x="1150" y="160" width="260" height="52" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1280" y="182" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">SWG (Squid 프록시)</text><text x="1280" y="199" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">10.14.0.37:3128 · WPAD 자동 설정</text>
+<rect x="950" y="232" width="210" height="56" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1055" y="256" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">Core-SW1 / Core-SW2</text><text x="1055" y="273" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">L3 이중화 · WAF 보호 ACL</text>
+<rect x="950" y="316" width="210" height="56" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1055" y="340" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">Dist-SW1 ~ 4</text><text x="1055" y="357" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">HSRP 이중화 · VLAN 게이트웨이</text>
+<rect x="950" y="400" width="210" height="56" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1055" y="424" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">Access-SW1 ~ 5</text><text x="1055" y="441" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">부서별 VLAN 접속</text>
+<rect x="1200" y="240" width="520" height="216" rx="9" fill="#ffffff" stroke="#4b9a63" stroke-width="1.6" /><text x="1460" y="301.5" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">직원 PC (부서별 VLAN)</text><text x="1460" y="318.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">DEV 10.14.10.0/24 (VLAN 410)</text><text x="1460" y="335.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">ADM 10.14.20.0/24 (VLAN 420)</text><text x="1460" y="352.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">HRF 10.14.30.0/24 (VLAN 430)</text><text x="1460" y="369.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">SHOP 10.14.40.0/24 (VLAN 440)</text><text x="1460" y="386.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">CS 10.14.50.0/24 (VLAN 450)</text><text x="1460" y="403.5" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">웹 접속은 SWG 경유, 업무 웹은 WAF 경유</text>
+<rect x="950" y="540" width="150" height="46" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1025" y="559" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">LOG_SW</text><text x="1025" y="576" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">로그 구역 10.14.210.0/24</text>
+<rect x="1130" y="534" width="250" height="58" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1255" y="559" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">LogSRV (Wazuh SIEM)</text><text x="1255" y="576" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">10.14.200.11 / 10.14.210.11</text>
+<rect x="950" y="640" width="150" height="46" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1025" y="659" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">SRV-AGG</text><text x="1025" y="676" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">서버 VLAN 490</text>
+<rect x="1130" y="628" width="120" height="58" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1190" y="653" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">DHCP</text><text x="1190" y="670" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">.10</text>
+<rect x="1262" y="628" width="120" height="58" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1322" y="653" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">IT-DB</text><text x="1322" y="670" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">.11 MariaDB</text>
+<rect x="1394" y="628" width="120" height="58" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1454" y="653" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">DNS-01</text><text x="1454" y="670" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">.12 BIND</text>
+<rect x="1526" y="628" width="100" height="58" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1576" y="653" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">CNS</text><text x="1576" y="670" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">.13 캐시</text>
+<rect x="1636" y="628" width="90" height="58" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1681" y="653" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">ERP-WEB</text><text x="1681" y="670" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">.14</text>
+<text x="1130" y="716" font-size="12.5" font-weight="400" fill="#5b6472" text-anchor="start">서버 구역 10.14.90.0/24 (게이트웨이는 pfSense, 서버 통신도 IPS를 거침)</text>
+<rect x="950" y="830" width="170" height="52" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1035" y="852" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">MGMT_SW1</text><text x="1035" y="869" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">관리망 중심</text>
+<rect x="1150" y="830" width="170" height="52" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1235" y="852" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">BackupSRV</text><text x="1235" y="869" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">.15 관리 중계 · 백업</text>
+<rect x="1350" y="830" width="170" height="52" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1435" y="852" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">관리 PC</text><text x="1435" y="869" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">.101</text>
+<rect x="950" y="920" width="770" height="70" rx="9" fill="#ffffff" stroke="#4b5563" stroke-width="1.6" /><text x="1335" y="951" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">MGMT_CORE → MGMT_WEB(WAF·SWG) / MGMT_SRV(DHCP·DNS·CNS·DB·ERP)</text><text x="1335" y="968" text-anchor="middle" font-size="12" font-weight="400" fill="#5b6472">모든 서버의 두 번째 NIC(.21~.27) · SSH는 BackupSRV와 관리 PC에서만 · 로그는 이 길로 LogSRV로 전달</text>
+<path d="M155 148 L155 190" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M270 221 L610 221" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<rect x="550.7" y="211" width="78.60000000000001" height="19" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="0.8" opacity="0.95"/>
+<text x="590" y="225" text-anchor="middle" font-size="11.5" fill="#1f2937">em2 (ISP)</text>
+<path d="M270 451 L330 455" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<rect x="253.3" y="441" width="93.4" height="19" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="0.8" opacity="0.95"/>
+<text x="300" y="455" text-anchor="middle" font-size="11.5" fill="#1f2937">IPsec 터널 통과</text>
+<path d="M40 451 L28 451 L28 771 L40 771" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M28 575 L40 575" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M28 675 L40 675" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M435 490 L435 530" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M435 582 L435 620" fill="none" stroke="#6b7280" stroke-width="1.8" stroke-dasharray="6 4" />
+<rect x="421.6" y="591" width="26.8" height="19" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="0.8" opacity="0.95"/>
+<text x="435" y="605" text-anchor="middle" font-size="11.5" fill="#1f2937">복사</text>
+<path d="M540 556 L575 556 L575 330 L610 330" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<rect x="535.7" y="460" width="78.60000000000001" height="19" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="0.8" opacity="0.95"/>
+<text x="575" y="474" text-anchor="middle" font-size="11.5" fill="#1f2937">em0 (WAN)</text>
+<path d="M745 346 L745 470" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<rect x="713.1" y="398" width="63.800000000000004" height="19" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="0.8" opacity="0.95"/>
+<text x="745" y="412" text-anchor="middle" font-size="11.5" fill="#1f2937">e1 · e3</text>
+<path d="M880 500 L920 500 L920 123 L950 123" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<rect x="902.9" y="290" width="34.2" height="19" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="0.8" opacity="0.95"/>
+<text x="920" y="304" text-anchor="middle" font-size="11.5" fill="#1f2937">쌍 A</text>
+<path d="M880 563 L950 563" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<rect x="897.9" y="553" width="34.2" height="19" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="0.8" opacity="0.95"/>
+<text x="915" y="567" text-anchor="middle" font-size="11.5" fill="#1f2937">쌍 B</text>
+<path d="M1100 123 L1125 123 L1125 186 L1150 186" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1125 122 L1150 122" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1025 146 L1055 232" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1055 288 L1055 316" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1055 372 L1055 400" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1160 428 L1180 428 L1180 348 L1200 348" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1100 563 L1130 563" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1025 586 L1025 640" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1100 663 L1112 663 L1112 618 L1686 618" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1190 618 L1190 628" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1322 618 L1322 628" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1454 618 L1454 628" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1576 618 L1576 628" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1681 618 L1681 628" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M880 168 L900 168 L900 856 L950 856" fill="none" stroke="#8c6fcf" stroke-width="1.8" stroke-dasharray="6 4" />
+<rect x="871.8" y="690" width="56.400000000000006" height="19" rx="4" fill="#ffffff" stroke="#8c6fcf" stroke-width="0.8" opacity="0.95"/>
+<text x="900" y="704" text-anchor="middle" font-size="11.5" fill="#1f2937">em4 관리</text>
+<path d="M1120 856 L1150 856" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1320 856 L1350 856" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<path d="M1035 882 L1035 920" fill="none" stroke="#6b7280" stroke-width="1.8"  />
+<text x="48" y="850" font-size="12" font-weight="400" fill="#a8423c" text-anchor="start">IPsec VPN: 서비스 DC · 물류 DC와</text><text x="48" y="868" font-size="12" font-weight="400" fill="#a8423c" text-anchor="start">사이트 간 터널 (pfSense가 종단)</text>
+<rect x="1396" y="14" width="330" height="86" rx="8" fill="#ffffff" stroke="#c9ced6"/>
+<text x="1408" y="34" font-size="12.5" font-weight="700" fill="#1f2937">범례</text>
+<line x1="1408" y1="48" x2="1448" y2="48" stroke="#6b7280" stroke-width="2.2" />
+<text x="1458" y="52" font-size="12" fill="#1f2937">연결(L2·L3 링크)</text>
+<line x1="1408" y1="65" x2="1448" y2="65" stroke="#8c6fcf" stroke-width="2.2" stroke-dasharray="6 4"/>
+<text x="1458" y="69" font-size="12" fill="#1f2937">복사·관리·VPN 터널</text>
+<line x1="1408" y1="82" x2="1448" y2="82" stroke="#c0463f" stroke-width="2.2" />
+<text x="1458" y="86" font-size="12" fill="#1f2937">보안 장비</text>
+<text x="30" y="1034" font-size="12" font-weight="400" fill="#5b6472" text-anchor="start">※ 지점·외부 공인 대역 주소는 문서용 대역(TEST-NET)으로 바꿔 표기했다. 내부 주소(10.x)는 실제 값이다.</text>
+</svg>
