@@ -53,7 +53,7 @@ export function staff() {
   s.node('a3', 560, 390, 170, 70, ['Access-SW3', 'HRF · VLAN 430'], { fill: '#f6fff8' });
   s.node('a4', 770, 390, 170, 70, ['Access-SW4', 'SHOP · VLAN 440'], { fill: '#f6fff8' });
   s.node('a5', 980, 390, 170, 70, ['Access-SW5', 'CS · VLAN 450'], { fill: '#f6fff8' });
-  const pcs = [['a1', 40, 'DEV PC 5대', '10.14.10.0/24'], ['a2', 250, 'ADM PC 5대', '10.14.20.0/24'], ['a3', 560, 'HRF PC 5대', '10.14.30.0/24'], ['a4', 770, 'SHOP PC 4대', '10.14.40.0/24'], ['a5', 980, 'CS PC 5대', '10.14.50.0/24']];
+  const pcs = [['a1', 40, 'DEV PC', '10.14.10.0/24 · 이론상 251대'], ['a2', 250, 'ADM PC', '10.14.20.0/24 · 이론상 251대'], ['a3', 560, 'HRF PC', '10.14.30.0/24 · 이론상 251대'], ['a4', 770, 'SHOP PC', '10.14.40.0/24 · 이론상 251대'], ['a5', 980, 'CS PC', '10.14.50.0/24 · 이론상 251대']];
   for (const [id, x, t1, t2] of pcs) { s.node('p' + id, x, 520, 170, 60, [t1, t2], { stroke: '#4b9a63' }); s.link([s.p(id, 'b'), s.p('p' + id, 't')], { arrow: 'none' }); }
   s.link([s.p('tr', 'r'), s.p('core', 'l')], { arrow: 'none' });
   for (const id of ['d1', 'd2', 'd3', 'd4']) s.link([[s.p(id, 't')[0], 160], s.p(id, 't')], { arrow: 'none' });
@@ -113,7 +113,7 @@ export function mgmtLogs() {
   src.forEach(([id, a, b], i) => s.node('s_' + id, 40, 96 + i * 82, 480, 64, [a, b]));
   s.node('log', 590, 130, 380, 250, ['LogSRV (Wazuh 4.9.2)', '10.14.200.11 (관리망) · 10.14.210.11 (로그 구역)', '수집: rsyslog 514 / 에이전트 1514·1515', '', '사용자 정의 탐지 규칙', 'ERP 로그인 실패·반복·접근 거부 (100100~)', 'WAF 차단·반복 차단, DB 접속 거부 (100110~)', 'MariaDB 감사: 접속·DDL·계정 변경 (100200~)', '파일 무결성 변경(FIM) 경보'], { fill: '#fff', stroke: '#7d5fc4', sw: 2.2 });
   s.node('ai', 590, 420, 380, 110, ['AI Agent의 입력', '알림 파일(alerts.json)을 읽기 전용으로 조회', '규칙 판정 + 문서 근거로 조사 보고서 작성']);
-  s.node('ntp', 590, 560, 380, 100, ['시간 동기', 'pfSense가 외부 NTP(kr.pool, google, cloudflare)에 동기', '서버는 모두 pfSense를 기준으로 맞춘다', '저장 상태에서 되살린 VM은 시계를 먼저 확인']);
+  s.node('ntp', 590, 560, 380, 100, ['시간 동기', 'pfSense가 외부 NTP(kr.pool, google, cloudflare)에 동기', '서버는 모두 pfSense를 기준으로 맞춘다', '재개·재기동한 VM은 시계를 먼저 확인']);
   s.node('mg', 1040, 96, 320, 90, ['MGMT_SW1 (관리망 중심)', '10.14.200.0/24', '서버마다 두 번째 NIC (.21 ~ .27)']);
   s.node('bk', 1040, 220, 320, 140, ['BackupSRV (.15)', '점프 호스트: 서버 SSH는 여기서만', '설정·DB 백업과 SHA-256 목록', '복원 시험(임시 DB로 복원 후 행 수 비교)']);
   s.node('adm', 1040, 390, 320, 70, ['관리 PC (.101)', '승인된 관리 단말']);
