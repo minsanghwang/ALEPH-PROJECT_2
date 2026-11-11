@@ -109,7 +109,7 @@
     <tr><td>IPS/IDS</td><td>Suricata 인라인(쌍 2개)·패시브(TAP), 사용자 정의 유출 탐지 시그니처, EVE 로그 전달</td><td>구축·검증</td><td>구역 2, 시험 T-16</td></tr>
     <tr><td>웹 보호</td><td>nginx + ModSecurity(OWASP CRS) 차단 모드, TLS 종단, 자체 CA</td><td>구축·검증</td><td>시험 T-01~T-03</td></tr>
     <tr><td>웹 프록시</td><td>Squid + WPAD(DHCP 옵션 252), 차단 목록, 목적지 기록</td><td>구축·검증</td><td>시험 T-04</td></tr>
-    <tr><td>SIEM</td><td>Wazuh 사용자 정의 규칙(ERP·WAF·DB 감사), 에이전트 파일 무결성 감시(FIM), rsyslog 수집</td><td>구축·검증</td><td>시험 T-03, T-10, T-11</td></tr>
+    <tr><td>SIEM</td><td>Wazuh 사용자 정의 규칙(ERP·WAF·DB 감사), 에이전트 파일 무결성 감시(FIM), rsyslog 수집</td><td>구축·검증</td><td>시험 T-03, T-10, T-11, T-18</td></tr>
     <tr><td>서버 보안</td><td>SSH 허용 사용자·키 인증, firewalld·ufw, SELinux, chrony 시간 동기, 관리 NIC 분리</td><td>구축·검증</td><td>시험 T-08, 사례 B</td></tr>
     <tr><td>데이터베이스</td><td>MariaDB 표별 최소 권한, 감사 플러그인, 백업·복원 시험</td><td>구축·검증</td><td>시험 T-09, T-10, T-12, 사례 C</td></tr>
     <tr><td>웹 앱 보안</td><td>매개변수화 쿼리, 출력 인코딩, CSRF, 역할별 권한, 업로드 방어</td><td>구축·검증</td><td>시험 T-13</td></tr>
@@ -319,6 +319,7 @@
     <tr><td>T-15</td><td>ERP ↔ 물류 DC 읽기</td><td>재고·출고·반품 조회</td><td class="na">부분</td><td>당일 200 응답을 확인. 이후 상대 작업으로 연결이 끊겨 재확인 못 함</td></tr>
     <tr><td>T-16</td><td>유출 감시 시그니처</td><td>금지 목적지로 보낸 요청의 경보 확인</td><td class="ok">통과</td><td>LEAK-DEST 경보가 SIEM에 기록(실제 경보 사용)</td></tr>
     <tr><td>T-17</td><td>AI Agent</td><td>6유형 자체 시험 코드, 실제 경보로 조사</td><td class="ok">통과</td><td>자체 시험 64건 통과. 실제 경보 14건 중 10건을 규칙 판정, 4건은 실제 모델로 조사 완료. 아래 6유형 표 참고</td></tr>
+    <tr><td>T-18</td><td>로그 수집 경로 장애의 식별·복구·재전송 구분</td><td>ERP-WEB의 로그 전송(rsyslog)을 중지하고 표식 로그를 남긴 뒤 LogSRV 파일 확인 → 재시작 → 새 표식과 탐지 확인</td><td class="ok">통과</td><td>중단 중 도착 0건(수집 파일의 마지막 줄 시각이 16:54:48에서 멈춤), 복구 뒤 새 표식 1건 + 중단 중 쌓였던 표식 1건이 재전송되어 도착(유실 아님). 복구 뒤 ERP 로그인 실패 6회(401)에 경보 "login failure"(단계 6)와 "repeated login failures (5 in 2 minutes)"(단계 10). 1차에는 화면 로그인 경로(303 응답)를 써서 감사 기록이 남지 않아 탐지가 비었고, 감사 기록이 남는 JSON 로그인 경로로 다시 시험했다</td></tr>
   </table></div>
 
   <h3>AI Agent 6유형 확인</h3>
